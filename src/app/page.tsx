@@ -22,7 +22,16 @@ export default function Home() {
               empowers businesses in the marketing space with unparalleled
             </p>
             <Button
-              sx={{ marginTop: 5, backgroundColor: "#FF4F00",  borderRadius: '10px', padding: '11px 26px' }}
+              sx={{
+                marginTop: 5,
+                backgroundColor: "#FF4F00",
+                borderRadius: "10px",
+                padding: "11px 26px",
+                textTransform: "none",
+                fontSize: "16px",
+                fontWeight: "normal",
+                fontStyle: "normal",
+              }}
               variant="contained"
               endIcon={<ArrowForwardIcon />}
             >
@@ -38,6 +47,16 @@ export default function Home() {
             />
           </div>
         </div>
+      </div>
+      <div className="mt-[6%] max-w-[40%] text-center mx-auto">
+        <h1 className="font-semibold text-[52px] leading-[58px]">
+          Explore the power of AI app generation
+        </h1>
+        <p className="text-lg mt-[4%] text-[#374151]">
+          Unlock the full potential of your tech stack with Horizon's <br></br> intuitive
+          and Unlock the full potential of your tech stack with GenAl's
+          intuitive and
+        </p>
       </div>
     </main>
   );
