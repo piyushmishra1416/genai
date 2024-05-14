@@ -1,13 +1,15 @@
 import ResponsiveAppBar from "@/components/Appbar";
 import FlatiPad from "@/assets/FlatiPadsvg.svg";
 import Image from "next/image";
-import { Button, Card } from "@mui/material";
+import { Button } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Section from "@/components/Section";
 import image1 from "@/assets/image1.svg";
 import Image2 from "@/assets/Image2.svg";
 import Image3 from "@/assets/Image3.svg";
 import ActionAreaCard from "@/components/Card";
+import Widget from "@/components/Pricing";
+import Help from "@/components/Help";
 
 export default function Home() {
   return (
@@ -58,9 +60,9 @@ export default function Home() {
           Explore the power of AI app generation
         </h1>
         <p className="text-lg mt-[4%] text-[#374151]">
-          Unlock the full potential of your tech stack with Horizon's <br></br>{" "}
+          Unlock the full potential of your tech stack with Horizon`&apos;`s <br></br>{" "}
           intuitive and Unlock the full potential of your tech stack with
-          GenAl's intuitive and
+          GenAl`&apos;`s intuitive and
         </p>
       </div>
       <Section
@@ -113,15 +115,20 @@ Horizon's intuitive and"
                 <ActionAreaCard/>
           </div>
         </div>
-        <div className="flex mt-[9.5%] ">
-          <div className="max-w-[65%] flex text-center mx-auto ">
+        <div className="flex flex-col mt-[9.5%] ">
+          <div className="max-w-[85%] flex text-center mx-auto ">
             <h1 className="font-semibold text-[52px] leading-[58px]">
-              {" "}
-              <span className="text-[#FF4F00]"> Essentially, </span>
-              everything you need to ship your first AI App{" "}
+              {" "}Start making
+              <span className="text-[#FF4F00]"> smarter </span>
+              decisions, <br></br>{" "}Choose a plan
             </h1>
           </div>
-          
+          <div>
+            <Widget/>
+          </div>
+          <div>
+            <Help/>
+          </div>
 
         </div>
       </div>
