@@ -68,7 +68,6 @@ export default function Home() {
       </div>
       <Section
         flexDirection="row-reverse"
-        padding="pl"
         imagefile={image1}
         coloredText="Unleash"
         heading="the power of AI with GenAI"
@@ -81,7 +80,6 @@ Horizon's intuitive and"
       <Section
         imagefile={Image2}
         flexDirection="row"
-        padding="pl"
         coloredText="Unleash"
         heading="the power of AI with GenAI"
         paragraph="Stay ahead of the curve with our Dynamic Trend Analysis feature.
@@ -92,7 +90,6 @@ Horizon's intuitive and"
       ></Section>
       <Section
         flexDirection="row-reverse"
-        padding="pr"
         imagefile={Image3}
         coloredText="Unleash"
         heading="the power of AI with GenAI"
