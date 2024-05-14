@@ -1,7 +1,7 @@
 import ResponsiveAppBar from "@/components/Appbar";
 import FlatiPad from "@/assets/FlatiPadsvg.svg";
 import Image from "next/image";
-import { Button } from "@mui/material";
+import { Button, Input } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Section from "@/components/Section";
 import image1 from "@/assets/image1.svg";
@@ -60,9 +60,9 @@ export default function Home() {
           Explore the power of AI app generation
         </h1>
         <p className="text-lg mt-[4%] text-[#374151]">
-          Unlock the full potential of your tech stack with Horizon`&apos;`s <br></br>{" "}
-          intuitive and Unlock the full potential of your tech stack with
-          GenAl`&apos;`s intuitive and
+          Unlock the full potential of your tech stack with Horizon`&apos;`s{" "}
+          <br></br> intuitive and Unlock the full potential of your tech stack
+          with GenAl`&apos;`s intuitive and
         </p>
       </div>
       <Section
@@ -107,31 +107,72 @@ Horizon's intuitive and"
             </h1>
           </div>
           <div className="grid grid-cols-3 gap-8 mx-[10%] mt-[5.5%]">
-                <ActionAreaCard/>
-                <ActionAreaCard/>
-                <ActionAreaCard/>
-                <ActionAreaCard/>
-                <ActionAreaCard/>
-                <ActionAreaCard/>
+            <ActionAreaCard />
+            <ActionAreaCard />
+            <ActionAreaCard />
+            <ActionAreaCard />
+            <ActionAreaCard />
+            <ActionAreaCard />
           </div>
         </div>
-        <div className="flex flex-col mt-[9.5%] ">
+        </div>
+        <div className="flex flex-col mt-[15%] ">
           <div className="max-w-[85%] flex text-center mx-auto ">
             <h1 className="font-semibold text-[52px] leading-[58px]">
-              {" "}Start making
+              {" "}
+              Start making
               <span className="text-[#FF4F00]"> smarter </span>
-              decisions, <br></br>{" "}Choose a plan
+              decisions, <br></br> Choose a plan
             </h1>
           </div>
           <div>
-            <Widget/>
+            <Widget />
           </div>
-          <div>
-            <Help/>
-          </div>
-
         </div>
+        <div>
+          <Help />
+        </div>
+        <div className="mt-[15%]  text-center mx-auto">
+        <h1 className="font-semibold text-[56px] leading-[58px]">
+          Detect your next <span className="text-[#FF4F00]">big move</span>
+        </h1>
+        <p className="text-lg mt-[4%] text-[#374151]">
+        Experience the synergy of your favorite tools working seamlessly<br></br>
+together, all powered by Horizon's cutting-edge Al analytics.
+        </p>
+        <div className=" space-x-4 mt-[3.5%] ">
+        <input
+        placeholder="youremail@gmail.com"
+        style={{
+          padding: "12px",
+          borderRadius: "10px",
+          fontSize: "16px",
+          width: "50%",
+          backgroundColor: "#E5E7EB"
+        }}
+      />
+      <Button
+      sx={{
+        backgroundColor: "#FF4F00",
+        borderRadius: "10px",
+        padding: "11px 26px",
+        textTransform: "none",
+        fontSize: "16px",
+        fontWeight: "normal",
+        fontStyle: "normal",
+     
+        "&:hover": {
+          backgroundColor: "#ffffff", 
+          color: "#FF4F00", 
+        },
+      }}
+      variant="contained"
+    >
+      Subscribe Now
+    </Button> 
       </div>
+      </div>
+      
     </main>
   );
 }
