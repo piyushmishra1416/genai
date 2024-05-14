@@ -10,6 +10,7 @@ import Image3 from "@/assets/Image3.svg";
 import ActionAreaCard from "@/components/Card";
 import Widget from "@/components/Pricing";
 import Help from "@/components/Help";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -115,64 +116,65 @@ Horizon's intuitive and"
             <ActionAreaCard />
           </div>
         </div>
-        </div>
-        <div className="flex flex-col mt-[15%] ">
-          <div className="max-w-[85%] flex text-center mx-auto ">
-            <h1 className="font-semibold text-[52px] leading-[58px]">
-              {" "}
-              Start making
-              <span className="text-[#FF4F00]"> smarter </span>
-              decisions, <br></br> Choose a plan
-            </h1>
-          </div>
-          <div>
-            <Widget />
-          </div>
+      </div>
+      <div className="flex flex-col mt-[15%] ">
+        <div className="max-w-[85%] flex text-center mx-auto ">
+          <h1 className="font-semibold text-[52px] leading-[58px]">
+            {" "}
+            Start making
+            <span className="text-[#FF4F00]"> smarter </span>
+            decisions, <br></br> Choose a plan
+          </h1>
         </div>
         <div>
-          <Help />
+          <Widget />
         </div>
-        <div className="mt-[15%]  text-center mx-auto">
+      </div>
+      <div>
+        <Help />
+      </div>
+      <div className="mt-[15%]  text-center mx-auto">
         <h1 className="font-semibold text-[56px] leading-[58px]">
           Detect your next <span className="text-[#FF4F00]">big move</span>
         </h1>
         <p className="text-lg mt-[4%] text-[#374151]">
-        Experience the synergy of your favorite tools working seamlessly<br></br>
-together, all powered by Horizon's cutting-edge Al analytics.
+          Experience the synergy of your favorite tools working seamlessly
+          <br></br>
+          together, all powered by Horizon&apos;s cutting-edge Al analytics.
         </p>
         <div className=" space-x-4 mt-[3.5%] ">
-        <input
-        placeholder="youremail@gmail.com"
-        style={{
-          padding: "12px",
-          borderRadius: "10px",
-          fontSize: "16px",
-          width: "50%",
-          backgroundColor: "#E5E7EB"
-        }}
-      />
-      <Button
-      sx={{
-        backgroundColor: "#FF4F00",
-        borderRadius: "10px",
-        padding: "11px 26px",
-        textTransform: "none",
-        fontSize: "16px",
-        fontWeight: "normal",
-        fontStyle: "normal",
-     
-        "&:hover": {
-          backgroundColor: "#ffffff", 
-          color: "#FF4F00", 
-        },
-      }}
-      variant="contained"
-    >
-      Subscribe Now
-    </Button> 
+          <input
+            placeholder="youremail@gmail.com"
+            style={{
+              padding: "12px",
+              borderRadius: "10px",
+              fontSize: "16px",
+              width: "50%",
+              backgroundColor: "#E5E7EB",
+            }}
+          />
+          <Button
+            sx={{
+              backgroundColor: "#FF4F00",
+              borderRadius: "10px",
+              padding: "11px 26px",
+              textTransform: "none",
+              fontSize: "16px",
+              fontWeight: "normal",
+              fontStyle: "normal",
+
+              "&:hover": {
+                backgroundColor: "#ffffff",
+                color: "#FF4F00",
+              },
+            }}
+            variant="contained"
+          >
+            Subscribe Now
+          </Button>
+        </div>
       </div>
-      </div>
-      
+      <Footer/>
     </main>
   );
 }

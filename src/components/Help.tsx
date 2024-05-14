@@ -52,7 +52,7 @@ const Faq: React.FC = () => {
       <div className="flex flex-col justify-center items-center text-center mx-auto">
         <h1 className="font-semibold text-4xl">Need Help?</h1>
         <p className="mt-[5%] text-xl text-[22, 28, 45, 0.7]">
-          Don't worry, we got you. Here are some answers for <br></br> your question.
+          Don&apos;t worry, we got you. Here are some answers for <br></br> your question.
         </p>
       </div>
       <div className="w-[45%] mt-[8%]">
